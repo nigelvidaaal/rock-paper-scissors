@@ -42,7 +42,7 @@ img {
     height: 300px;
 }
 
-.img {
+.hands {
     margin-top: 30px;
     display: flex;
     align-items: center;
@@ -73,6 +73,7 @@ img {
 }
 
 button { 
+    text-transform: uppercase;
     margin-top: 40px;
     font-family: 'Press Start 2P', cursive;
     background-color: black;
@@ -95,4 +96,28 @@ footer {
     font-size: 10px;
     text-align: center;
     margin: 50px auto;
+}
+
+@keyframes shakePlayer {
+    0% {
+        transform:  translateY(0px);
+    }
+    50% {
+        transform:  translateY(-50px);
+    }
+    100% {
+        transform:  translateY(0px);
+    }
+}
+
+@keyframes shakeComputer {
+    0% {
+        transform: rotateY(180deg) translateY(0px);
+    }
+    50% {
+        transform: rotateY(180deg) translateY(-50px);
+    }
+    100% {
+        transform: rotateY(180deg) translateY(0px);
+    }
 }
